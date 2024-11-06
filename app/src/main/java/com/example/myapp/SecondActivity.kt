@@ -12,10 +12,10 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        // Retrieve the number passed from the first activity
+
         currentNumber = intent.getIntExtra("number", 0)
 
-        // Set up the UI elements
+
         val numberTextView = findViewById<TextView>(R.id.numberTextView)
         numberTextView.text = currentNumber.toString()
 

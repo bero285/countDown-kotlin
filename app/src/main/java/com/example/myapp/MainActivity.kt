@@ -17,16 +17,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Set up the header
-        val header = findViewById<TextView>(R.id.header)
-        header.setBackgroundColor(0xFF6200EE.toInt()) // #6200EE
-        header.text = "MidTermBtuEasy"
 
-        // Initialize UI elements
+
         numberEditText = findViewById(R.id.numberEditText)
         displayTextView = findViewById(R.id.displayTextView)
 
-        // Set up the buttons
+
         val okButton = findViewById<Button>(R.id.okButton)
         okButton.setOnClickListener {
             enteredNumber = numberEditText.text.toString().toIntOrNull()
